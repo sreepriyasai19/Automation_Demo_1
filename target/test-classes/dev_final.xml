@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<suite name="Amazon Suite" parallel="tests">
+
+    <test thread-count = "5" name="Chrome Test">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="selenium.Cross_browser"/>
+        </classes>
+    </test>
+    
+       <test thread-count = "5" name="Firefox Test">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="selenium.Cross_browser"/>
+        </classes>
+    </test>
+
+     <test thread-count = "5" name="Edge Test">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="selenium.Cross_browser"/>
+        </classes>
+    </test>
+
+</suite>
